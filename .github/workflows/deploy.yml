@@ -1,0 +1,7 @@
+      - name: Run Generator
+        run: |
+          ls -R
+          node generate.js
+        # This tells GitHub to look at the root of your repo
+        env:
+          NODE_PATH: .
