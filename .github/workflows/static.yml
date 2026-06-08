@@ -5,11 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with: {python-version: '3.9'}
-      - run: pip install pandas jinja2
-      - run: python scripts/generator.py
+      - name: Run Generator
+        run: python scripts/generator.py
       - name: Deploy
         uses: actions/deploy-pages@v4
         with: {artifact_name: github-pages-artifact, path: './docs'}
