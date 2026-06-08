@@ -34,3 +34,4 @@ with open('docs/index.html', 'w') as f:
     for p in pages:
         f.write(f"<li><a href='{p['filename']}.html'>{p['title']}</a></li>")
     f.write("</ul>")
+
