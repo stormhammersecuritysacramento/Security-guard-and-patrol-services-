@@ -1,0 +1,5 @@
+{
+  "cities": ["roseville", "citrus-heights", "sacramento"],
+  "painPoints": ["copper-theft", "catalytic-converter-theft", "trespassing"],
+  "industries": ["construction-site", "retail-store", "hoa"]
+}
