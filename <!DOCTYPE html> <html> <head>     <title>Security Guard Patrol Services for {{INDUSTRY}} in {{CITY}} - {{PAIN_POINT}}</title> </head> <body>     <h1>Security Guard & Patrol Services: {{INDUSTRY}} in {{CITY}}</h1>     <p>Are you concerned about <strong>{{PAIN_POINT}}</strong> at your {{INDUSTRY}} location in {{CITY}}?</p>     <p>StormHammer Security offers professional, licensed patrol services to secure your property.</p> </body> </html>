@@ -1,0 +1,25 @@
+const fs = require('fs');
+const data = require('./data.json');
+const template = fs.readFileSync('template.html', 'utf8');
+
+data.cities.forEach(city => {
+  data.painPoints.forEach(pain => {
+    data.industries.forEach(industry => {
+      
+      // Create the long-tail slug
+      const slug = `${city}-security-guard-patrol-services-${pain}-at-${industry}`;
+      
+      // Replace placeholders
+      let page = template
+        .replace(/{{CITY}}/g, city.replace('-', ' '))
+        .replace(/{{PAIN_POINT}}/g, pain.replace('-', ' '))
+        .replace(/{{INDUSTRY}}/g, industry.replace('-', ' '));
+
+      // Build folder and file
+      const dir = `./public/${slug}`;
+      fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(`${dir}/index.html`, page);
+      console.log(`Generated: ${slug}`);
+    });
+  });
+});
