@@ -1,0 +1,9 @@
+{
+  "name": "stormhammer-seo",
+  "version": "1.0.0",
+  "main": "generate.js",
+  "scripts": {
+    "generate": "node generate.js",
+    "sitemap": "node sitemap.js"
+  }
+}
