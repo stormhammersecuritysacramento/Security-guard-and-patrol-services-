@@ -1,0 +1,20 @@
+{
+  "cities": ["Sacramento", "Roseville", "Citrus Heights", "Folsom", "Natomas"],
+  "properties": ["Apartments", "Shopping Centers", "Warehouses", "Office Buildings", "Construction Sites"],
+  "services": ["Security Guard Services", "Security Patrol Services", "Mobile Patrol Services"],
+  "problems": [
+    "theft",
+    "loitering",
+    "trespassing",
+    "burglary prevention",
+    "suspicious activity",
+    "vandalism"
+  ],
+  "streets": [
+    "Sunrise Blvd",
+    "Watt Ave",
+    "Greenback Ln",
+    "Madison Ave",
+    "Folsom Blvd"
+  ]
+}
